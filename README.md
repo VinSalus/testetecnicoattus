@@ -97,3 +97,7 @@ npm run build
 ## Analise de incidente
 
 A parte de analise esta em [`docs/incidente.md`](docs/incidente.md).
+
+## Evidencia de funcionamento
+
+![Fluxo validado com Docker Compose e Playwright](evidencia-funcionamento.png)
