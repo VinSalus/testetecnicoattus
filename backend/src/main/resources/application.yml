@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demandas
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/demandas}
+    username: ${SPRING_DATASOURCE_USERNAME:demandas}
+    password: ${SPRING_DATASOURCE_PASSWORD:demandas}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: ${SERVER_PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    br.com.attus.demandas: INFO
